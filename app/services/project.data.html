@@ -1,0 +1,217 @@
+<div class="container" ng-controller="mainCtrl">
+
+     <button class="btn btn-primary btn-small margin-right-xs" data-toggle="modal" data-target="#Resend-pop-up">Form Modal
+        </button>
+     <div id="Resend-pop-up" class="modal fade  download-report in" role="dialog">
+         <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="material-icons">close</i>
+                        </button>
+                        <div class="modal-title-img list-inline-block ">
+
+                        </div>
+                        <h4 class="modal-title font-size-md list-inline-block vertical-top margin-top-md">Modal Heading</h4>
+                        <p>My name is : <strong>{{ name | capitalize }}</strong>.</p>
+                    </div>
+                      <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <p class="column-title">
+                                    Playback
+                                </p>
+                                <div class="divider"></div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Start Frame</label>
+                                        </div>
+                                        <div class="col-md-6">
+    <input name="height6" #Directive= my-second-directive [number-only] = true [maxValue]= 100 [minValue] = 0 class="form-control"  required=""  placeholder="number only" />
+
+    <span  data-class="sframe" [update-number] = 'Directive' [inc] = true class="glyphicon glyphicon-triangle-top triangleUp"></span>
+
+    <span data-class="sframe"  [update-number] = 'Directive' [dec] = true  class="glyphicon glyphicon-triangle-bottom triangleDown" ></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+        <div class="divider"></div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>End Frame</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                        <p>
+                <input name="height5" type="text" class="form-control" #Directive1= my-second-directive number-only [maxValue]= 20 [minValue] = 1 class="form-control"  required=""  placeholder="decimal allowed">
+<span  data-class="sframe" [update-number] = 'Directive1' [inc] = true class="glyphicon glyphicon-triangle-top triangleUp"></span>
+
+    <span data-class="sframe"  [update-number] = 'Directive1' [dec] = true  class="glyphicon glyphicon-triangle-bottom triangleDown" ></span>
+</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                 <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>HEIGHT</label>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                        <p>
+                <input name="height5" type="text" class="form-control" #Directive2= my-second-directive number-only [maxValue]= 5 [minValue] = -10 class="form-control"  required=""  placeholder=" negative & decimal">
+<span  data-class="sframe" [update-number] = 'Directive2' [inc] = true class="glyphicon glyphicon-triangle-top triangleUp"></span>
+
+    <span data-class="sframe"  [update-number] = 'Directive2' [dec] = true  class="glyphicon glyphicon-triangle-bottom triangleDown" ></span>
+</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>WIDTH</label>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                        <p>
+               <input name="height4"  type="text" class="form-control" #Directive3= my-second-directive number-only [maxValue]= 5 [minValue] = -10 class="form-control"  required="" placeholder="negative allowed">
+<span  data-class="sframe" [update-number] = 'Directive3' [inc] = true class="glyphicon glyphicon-triangle-top triangleUp"></span>
+
+    <span data-class="sframe"  [update-number] = 'Directive3' [dec] = true  class="glyphicon glyphicon-triangle-bottom triangleDown" ></span>
+</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="divider margin-top-md"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Hide Ticket
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="nb-checkbox">
+                                            <input type="checkbox">
+                                            <span class="nb-checkbox__bg"></span>
+                                            <span class="nb-checkbox__icon">
+                        <i class="material-icons">check</i>
+                        </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Mute
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="nb-checkbox">
+                                            <input type="checkbox">
+                                            <span class="nb-checkbox__bg"></span>
+                                            <span class="nb-checkbox__icon">
+                        <i class="material-icons">check</i>
+                        </span>
+                                        </label>
+                                    </div>
+                                </div>
+        <div class="divider"></div>
+                            </div>
+                              <div class="col-md-4 col-sm-12 col-xs-12">
+              
+                                <p class="column-title">
+                                    tag
+                                </p>
+                                <div class="divider"></div>
+  <div class="container" style="padding-left: 0px">
+  <div class="col-md-4 col-sm-12 col-xs-12 boxtype" style="padding-left: 0px">
+  <input type="text" autocomplete="off" [dropdown-list]= "countries"  class="form-control " style="width:93% " />  
+<span class="glyphicon glyphicon-triangle-bottom"  style="position:absolute;right: 45px;top: 10px;" aria-hidden="true"></span>
+</div></div>
+
+                                <div class="block-border margin-top-md gridSystem mCustomScrollBox mCS-dark mCSB_vertical_horizontal mCSB_outside" >
+                                    <div class="item-wraper header ">
+                                        <div class="item">
+                                            Make
+                                        </div>
+                                        <div class="item">
+                                           Model
+                                        </div>
+                                        <div class="item">
+                                            Price
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wraper" *ngFor="let hero of getDATA" >
+                                        <div class="item">
+                                            {{hero.make}}
+                                        </div>
+                                        <div class="item">
+                                             {{hero.model}}
+                                        </div>
+                                        <div class="item">
+                                           {{hero.price}}
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                            </div>
+                              <div class="col-md-4 col-sm-12 col-xs-12 position-relative">
+                                <p class="column-title">
+                                    validity
+                                </p>
+        <button type="submit" class="btn btn-default btn-txt" data-dismiss="modal">Add</button>
+                                <div class="divider"></div>
+
+                                <div ng-scrollbars class="block-border gridSystemSecond" >
+                                    <div class="item-wraper header">
+                                        <div class="item">
+                                            Make
+                                        </div>
+                                        <div class="item">
+                                            Model
+                                        </div>
+                                        <div class="item">
+                                            Price
+                                        </div>
+                                    </div>
+                                   <div class="item-wraper" *ngFor="let hero of getDATA" >
+                                        <div class="item">
+                                            {{hero.make}}
+                                        </div>
+                                        <div class="item">
+                                             {{hero.model}}
+                                        </div>
+                                        <div class="item">
+                                           {{hero.price}}
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                       </div>
+                      
+                      </div> 
+
+                    </div> 
+                     <div class="margin-top-xl btn-grp--inline text-center">
+                            <button type="submit" class="btn btn-primary">SAVE</button>
+                            <button type="submit" class="btn btn-default btn-txt" data-dismiss="modal">Cancel</button>
+                        </div>
+                </div> 
+
+       </div>
+   </div>
+   <style>
+       .suggestions{height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    margin-top: -1px;
+   display: block;clear: both;
+}
+   </style>

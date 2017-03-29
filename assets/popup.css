@@ -1,0 +1,324 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+label{
+    font-weight: 300 !important;
+    color: #666 !important;
+}
+.divider{
+    border-top: solid 1px #ececec;
+    margin-bottom: 20px;
+}
+
+.font-size-md {
+    font-size: 18px;
+}
+.modal-header .close {
+    margin-top: 0;
+}
+.modal-title-img{
+    /*border:solid 1px #666;*/
+    border-radius: 4px;
+    height: 90px;
+    width: 150px;
+    background-color: #ccc;
+    color: #fff;
+    position: relative;
+    background: url("https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png") no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+}
+.modal-title-img p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.list-inline-block{
+    display: inline-block;
+}
+.vertical-top{
+    vertical-align: top;
+}
+.margin-top-md{
+    margin-top: 12px !important;
+}
+.btn-primary{
+    background-color: #44bcd3 !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    border-color: #44bcd3 !important;
+}
+.btn-txt{
+    border: none !important;
+    color: #44bcd3 !important;
+}
+.btn-default:hover{
+    background-color: transparent !important;
+}
+
+
+.column-title{
+    font-weight: 700;
+    color: #44bcd3;
+    text-transform: uppercase;
+}
+.nb-checkbox {
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 24px;
+}
+.nb-checkbox {
+    display: block;
+    margin-bottom: 24px;
+}
+.nb-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    outline: 0;
+    border: none;
+    position: absolute;
+}
+.nb-checkbox__bg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #757575;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.nb-checkbox__icon {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.nb-checkbox input:checked + .nb-checkbox__bg + .nb-checkbox__icon {
+    opacity: 1;
+}
+.nb-checkbox input:checked + .nb-checkbox__bg {
+    background-color: #212121;
+    border-color: transparent;
+}
+.nb-checkbox .material-icons {
+    font-size: 14px;
+    color: #fff;
+}
+.seacrh-input:after{
+    content: "";
+    display: inline-block;
+    font-family: 'Material Icons';
+    position: absolute;
+    right: 22px;
+    top: 58px;
+    color: #999;
+}
+
+
+.auto-suggest-list .ui-select-choices-row>a{
+    padding: 10px;
+}
+.auto-suggest-list .ui-select-choices-row:hover{
+
+    background-color: #f3f5f6;
+}
+.auto-suggest-list .ui-select-choices-row>a:hover{
+    color: red !important;
+}
+
+
+.table>tbody>tr>td{
+    padding: 12px !important;
+    border-right: 1px solid #ddd !important;
+}
+tr:nth-child(even) {background: #f3f5f6}
+.table>thead>tr>th{border-bottom:0 !important;
+}
+.block-border {
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+   overflow: scroll;
+    height: 270px;
+
+
+}
+.table{
+    height: 400px;
+    width: 300px;
+    overflow:scroll;
+    margin-bottom: 0 !important;
+}
+.modal-content:before{
+    content: "\E314";
+    display: inline-block;
+    font-family: 'Material Icons';
+    position: absolute;
+    left: 10px;
+    top: 310px;
+    color: #ddd;
+    font-size: 85px;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 0;
+    border: solid 2px #ddd;
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    color: transparent;
+    height: 36px;
+    width: 36px;
+}
+.modal-content:after{
+    content: "\E315";
+    display: inline-block;
+    font-family: 'Material Icons';
+    position: absolute;
+    right: 12px;
+    top: 310px;
+    color: #ddd;
+    font-size: 0;
+    z-index: 999;
+    cursor: pointer;
+    border: solid 2px #ddd;
+    transform: rotate(45deg);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+
+    height: 36px;
+    width: 36px;
+}
+.textboxArrows {
+    color:#CCCCEA !important;
+}
+
+.modal-content{
+    border: solid 15px #cdd6dd !important;
+    padding: 20px !important
+}
+
+.item {
+    display: inline-block;
+  border-right: 1px solid #ccc;
+    width: 33%;
+    text-align: center;
+    display: table-cell;
+    padding: 6px;
+    vertical-align: middle;
+}
+
+
+
+
+.item-wraper:nth-child(odd){
+    background-color: #f6f6f6;
+}
+.item:last-child{
+    border: 0;
+}
+.item-wraper{
+    width: 343px;
+    display: table;
+
+}
+.header .item{
+    background: #ccc;
+    border-right: 1px solid #777;
+}
+
+.header .item:last-child{
+    border: 0;
+}
+.header{
+    border-bottom: solid 1px #a0a0a0;
+        position: fixed;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 600px !important;
+        margin: 30px auto;
+    }
+}
+@media (min-width: 960px){
+    .modal-dialog {
+        width: 900px !important;
+        margin: 30px auto;
+    }
+}
+@media (min-width: 1360px){
+    .modal-dialog {
+        width: 1200px !important;
+        margin: 30px auto;
+    }
+}
+.modal-header{
+    border-bottom:0;
+}
+.position-relative{
+    position: relative;
+}
+.position-relative .btn{position: absolute;
+    right: 0;
+    top: -5px;}
+body{
+    font-size: 13px;
+}
+.btn-grp--inline .btn-txt{
+    text-decoration: underline;
+}
+.auto-suggest-list {
+    width: 100% !important;
+}
+.ui-select-bootstrap .ui-select-choices-row.active>a:hover{
+    color:#fff;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background-color:#ccc !important;}
+.mCSB_outside+.mCSB_scrollTools {
+    right:-9px !important;
+}
+.mCustomScrollBox+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal, .mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    bottom:-8px !important;
+}
+.mCSB_inside>.mCSB_container {
+    margin-right:10px;
+}
+#mCSB_1_scrollbar_horizontal .mCSB_dragger{ width: 100px; }
+.position-relative .btn {
+    position: absolute !important;
+    right: 0 !important;
+    top: -5px !important;
+    font-size: 12px !important;
+}
+.auto-suggest-list {
+    width: 100% !important;
+}
+.ui-select-bootstrap .ui-select-choices-row.active>a:hover{
+    color:#fff;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    width: 6px;
+}
+
+.auto-suggest-list .mCSB_scrollTools{
+    width: 5px;
+}
+.auto-suggest-list .mCSB_dragger_bar{
+    width: 8px;
+}
+.auto-suggest-list .mCSB_draggerContainer{
+    right: -7px;
+
+}
+.mCSB_inside>.mCSB_container {
+    margin-right: 0px;
+
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    height: 6px !important;
+}
